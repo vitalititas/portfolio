@@ -12,54 +12,79 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
   h1{font-size:clamp(2rem,5vw,3rem);line-height:1.1;letter-spacing:-.02em;font-weight:700}
   h2{font-size:1.15rem;font-weight:600;margin-bottom:.25em}
   a{color:inherit;text-decoration:none}
-  .hero{padding:72px 0 40px}
-  .lede{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--muted);max-width:620px;margin-top:18px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;padding:24px 0 80px}
+  .hero{padding:72px 0 34px}
+  .lede{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--muted);max-width:640px;margin-top:18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;padding:24px 0 60px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:.15s;display:flex;flex-direction:column}
   .card:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(20,24,29,.08),0 16px 40px rgba(20,24,29,.1)}
   .card img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:#eef1f0}
-  .card .body{padding:18px 20px}
-  .card p{color:var(--muted);font-size:.95rem;margin-top:2px}
-  .tag{display:inline-block;font-size:.78rem;color:var(--brand);border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin-bottom:10px}
-  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+  .card .body{padding:16px 20px}
+  .card p{color:var(--muted);font-size:.93rem;margin-top:2px}
+  .tag{display:inline-block;font-size:.76rem;color:var(--brand);border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin-bottom:10px}
+  .foot-cta{border-top:1px solid var(--line);padding:40px 0 60px;text-align:center}
+  .btn{display:inline-block;background:var(--brand);color:#fff;padding:13px 26px;border-radius:10px;font-weight:600;margin-top:16px}
+  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}
   .accent{color:var(--brand)}
 </style>
 </head>
 <body>
 <section class="hero"><div class="wrap">
   <h1>I build clean websites for local businesses.</h1>
-  <p class="lede">Fast, simple, and yours. No templates that look like everyone else, no monthly
-  rent for a page you should just own. Here's a few sample builds. Want one for your business?
-  I'll put together a preview first, no charge to look.</p>
+  <p class="lede">Fast, simple, and yours. No cookie-cutter templates, no monthly rent for a page you
+  should just own. Here's a range of sample builds across different trades. Want one for your
+  business? I'll put together a preview first, no charge to look.</p>
 </div></section>
 
 <section class="wrap"><div class="grid">
   <a class="card" href="insurance/">
     <img src="insurance/preview.png" alt="Insurance agent website sample">
     <div class="body"><span class="tag">Insurance agent</span>
-      <h2>Marlow Insurance</h2>
-      <p>Independent agent site, built to earn trust and turn a search into a call.</p></div>
+      <h2>Marlow Insurance</h2><p>Independent agent site built to earn trust and turn a search into a call.</p></div>
   </a>
   <a class="card" href="cpa/">
     <img src="cpa/preview.png" alt="CPA / tax website sample">
     <div class="body"><span class="tag">CPA · tax · bookkeeping</span>
-      <h2>Tax &amp; accounting</h2>
-      <p>Clean practice site with a clear path to book, built for seasonal intake.</p></div>
+      <h2>Tax &amp; accounting</h2><p>Clean practice site with a clear path to book, built for seasonal intake.</p></div>
   </a>
   <a class="card" href="realtor/">
     <img src="realtor/preview.png" alt="Real estate agent website sample">
     <div class="body"><span class="tag">Real estate</span>
-      <h2>Realtor</h2>
-      <p>Personal agent site that stands apart from the brokerage cookie-cutter.</p></div>
+      <h2>Realtor</h2><p>Personal agent site that stands apart from the brokerage cookie-cutter.</p></div>
+  </a>
+  <a class="card" href="landscaping/">
+    <img src="landscaping/preview.png" alt="Landscaping company website sample">
+    <div class="body"><span class="tag">Landscaping · trades</span>
+      <h2>Cedar &amp; Stone</h2><p>Full-service landscaper site with services, estimates, and a call-first CTA.</p></div>
+  </a>
+  <a class="card" href="restaurant/">
+    <img src="restaurant/preview.png" alt="Restaurant website sample">
+    <div class="body"><span class="tag">Restaurant · food</span>
+      <h2>Rosa's Cocina</h2><p>Family restaurant site with menu, online-order CTA, and a warm story.</p></div>
+  </a>
+  <a class="card" href="dental/">
+    <img src="dental/preview.png" alt="Dental practice website sample">
+    <div class="body"><span class="tag">Dental · medical</span>
+      <h2>Rivergate Dental</h2><p>Modern practice site built for new-patient booking and same-day trust.</p></div>
+  </a>
+  <a class="card" href="law/">
+    <img src="law/preview.png" alt="Law firm website sample">
+    <div class="body"><span class="tag">Law firm</span>
+      <h2>Vance &amp; Reyes Law</h2><p>Family and immigration firm site with a free-consult path and calm authority.</p></div>
   </a>
 </div></section>
 
+<section class="foot-cta"><div class="wrap">
+  <h2 style="font-size:1.6rem">Don't see your line of work?</h2>
+  <p class="lede" style="margin:10px auto 0">These are samples. Whatever you do, I'll mock up something built for your business specifically, before you pay a cent.</p>
+  <a href="mailto:vitalis@asymmetricintellect.com" class="btn">Get a free preview</a>
+</div></section>
+
 <footer><div class="wrap">
-  Built by <span class="accent">Vitalis</span>. Sample work. Want one for your business? Reach out.
+  Built by <span class="accent">Vitalis</span> · Asymmetric Intellect. Sample work. Want one for your business? Reach out.
 </div></footer>
 </body>
 </html>
